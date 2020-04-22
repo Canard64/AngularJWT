@@ -14,12 +14,16 @@ export class AppComponent {
 
   constructor(public loginService : LoginServiceService)
   {
-    this.loginService.currentUser.subscribe(x =>{ this.currentUser = x;
+    this.loginService.currentUser.subscribe(x =>{
+         this.currentUser = x;
 
     });
 
   this.loginService.isAuthenticated.subscribe(
-    (isAuthenticated : Boolean) => this.isAuthenticated = this.isAuthenticated
+    (x ) =>{
+    this.isAuthenticated = x;
+      ;
+    }
   );
 
   }

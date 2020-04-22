@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LoginServiceService} from 'src/app/login-service.service';
 
 @Component({
   selector: 'app-usine',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsineComponent implements OnInit {
 
-  constructor() { }
+  constructor(public loginService : LoginServiceService) { }
 
-  ngOnInit(): void {
+  ngOnInit()
+   {
+    console.log('USINE');
+    this.loginService.getData();
   }
 
 }
