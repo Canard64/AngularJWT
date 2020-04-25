@@ -24,6 +24,7 @@ import { UsineComponent } from './usine/usine.component';
 
 import {ErrorInterceptor } from './helpers/error.interceptor';
 import {JwtInterceptor } from './helpers/jwt.interceptor';
+import { AccountComponent } from './account/account.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import {JwtInterceptor } from './helpers/jwt.interceptor';
     AppComponent,
     LoginPageComponent,
     HomeComponent,
-    UsineComponent
+    UsineComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,

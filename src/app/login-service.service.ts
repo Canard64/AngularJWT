@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { HttpClient, HttpHeaders,HttpParams } from '@angular/common/http';
 
 import {User} from './models/user'
+import { stringify } from 'querystring';
 
 
 @Injectable({
@@ -37,11 +38,14 @@ export class LoginServiceService {
     Password
     })
     .pipe(map(user => {
+      console.log("fin du login");
                localStorage.setItem('currentUser', JSON.stringify(user));
         this.currentUserSubject.next(user);
         this.isAuthenticated.next(true);
         return user;
     }));
+
+
 
     /*return this.http.get<User>("https://localhost:44311/api/login", {params: {
       username: userName,
@@ -54,6 +58,19 @@ export class LoginServiceService {
         return user;
     }));*/
 
+  }
+
+  createAccount(FirstName : string, LastName : string, Email : string , Password : string)
+  {
+    return this.http.post<any>("https://localhost:44311/api/login/CreateAccount", {FirstName,
+    LastName,Email,Password
+    })
+    .pipe(map(user => {
+              // localStorage.setItem('currentUser', JSON.stringify(user));
+             // this.currentUserSubject.next(user);
+        this.isAuthenticated.next(false);
+        return user;
+    }));
   }
 
   getData ()
