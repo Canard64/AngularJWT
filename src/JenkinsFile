@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+
+    stages {
+         stage('Clone') {
+            steps {
+                echo 'Cloning..'
+                sh 'npm install'
+                sh 'rm -rf *'
+                sh 'git clone https://github.com/Canard64/AngularJWT'
+                sh 'npm --version'
+            }
+        }
