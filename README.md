@@ -1,6 +1,12 @@
 # WebAngular
-teesqsfqsfdddd
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
+## AWS
+
+yum install -y gcc-c++ make #
+curl -sL https://rpm.nodesource.com/setup_14.x | sudo -E bash -
+yum install nodejs
+npm install -g @angular/cli --unsafe-perm=true --allow-root
 
 ## Development server
 
