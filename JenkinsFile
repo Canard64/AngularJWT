@@ -14,10 +14,8 @@ pipeline {
             steps {
                 echo 'Building.'
                 sh 'cd AngularJWT/'
-                 sh 'npm --version'
-                sh 'npm install express'
-                sh 'npm init -y'
-                sh 'npm run-script build'
+                 sh 'ng build'
+
             }
         }
     }
