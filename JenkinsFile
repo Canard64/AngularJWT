@@ -7,15 +7,16 @@ pipeline {
                 echo 'Cloning..'
                 sh 'rm -rf *'
                 sh 'git clone https://github.com/Canard64/AngularJWT'
-                sh 'npm --version'
-                sh 'npm install express'
-                sh 'npm init -y'
+
             }
         }
           stage('Build') {
             steps {
                 echo 'Building.'
                 sh 'cd AngularJWT/'
+                 sh 'npm --version'
+                sh 'npm install express'
+                sh 'npm init -y'
                 sh 'npm run-script build'
             }
         }
