@@ -21,6 +21,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSelectModule } from '@angular/material/select';
 import { HomeComponent } from './home/home.component';
 import { UsineComponent } from './usine/usine.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
 
 import {ErrorInterceptor } from './helpers/error.interceptor';
 import {JwtInterceptor } from './helpers/jwt.interceptor';
@@ -52,7 +54,9 @@ import { AccountComponent } from './account/account.component';
     MatInputModule,
     MatCardModule,
     MatSlideToggleModule,
-    MatSelectModule
+    MatSelectModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [
      { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

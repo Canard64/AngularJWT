@@ -13,7 +13,7 @@ const routes: Routes = [
   {
     path: 'game',
     component: UsineComponent,
-    canActivate :  [LoginGuardService]
+   // canActivate :  [LoginGuardService]
   }
   ,
   {

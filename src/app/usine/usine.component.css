@@ -1,0 +1,38 @@
+table {
+  width: 100%;
+}
+
+
+
+tr.example-detail-row {
+  height: 2rem;
+}
+
+.wrapperTab {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, [col] auto ) ;
+  grid-template-rows: repeat(2, [row] auto  );
+  background-color: #fff;
+  color: rgba(107, 93, 187, 0.657);
+}
+.box {
+  background-color: rgba(107, 93, 187, 0.657);
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+
+}
+
+.a {
+  grid-column: col 1 ;
+  grid-row: row;
+}
+
+.b {
+  grid-column: col 2 ;
+  grid-row: row;
+}
+
+
