@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo 'Building.'
                 sh 'cd AngularJWT/'
-                 sh 'ng build'
+                sh 'ng build'
 
             }
         }
