@@ -10,5 +10,12 @@ pipeline {
                 sh 'npm --version'
             }
         }
+          stage('Build') {
+            steps {
+                echo 'Building.'
+                sh 'cd AngularJWT/'
+                sh 'npm run build --dev'
+            }
+        }
     }
 }
