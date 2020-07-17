@@ -1,12 +1,24 @@
 # WebAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
-## AWS
 
-yum install -y gcc-c++ make #
-curl -sL https://rpm.nodesource.com/setup_14.x | sudo -E bash -
-yum install nodejs
-npm install -g @angular/cli --unsafe-perm=true --allow-root
+#AWS Ubuntu Pipeline
+
+Installation de Jenkins
+sudo apt install openjdk-8-jre
+sudo update-alternatives --config java
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+sudo apt-add-repository "deb https://pkg.jenkins.io/debian-stable binary/"
+sudo apt install jenkins
+sudo systemctl start jenkins
+
+Installation de NPM/Node/AngularCLI
+sudo apt-get update
+sudo apt-get install npm
+wget -qO- https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt install -y nodejs
+
+npm i @angular/cli
 
 ## Development server
 
