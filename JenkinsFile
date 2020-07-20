@@ -12,8 +12,6 @@ pipeline {
         }
           stage('Dependencies') {
             steps {
-              echo 'PWD'
-              sh '$PWD'
               sh 'npm install'
             }
         }
