@@ -12,20 +12,11 @@ pipeline {
         }
           stage('Dependencies') {
             steps {
-              sh "$PWD"
+              sh '$PWD'
               dir('AngularJWT'){
-                   sh '$PWD'
-                  sh 'npm install'
-                  sh 'npm test'
-
-              }
+                 sh '$PWD'
+                 sh 'npm install'              }
            }
         }
-        stage('Test') {
-            steps {
-
-               }
-        }
-
     }
 }
