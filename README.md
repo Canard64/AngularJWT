@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 #AWS Ubuntu Pipeline
 
 Installation de Jenkins 
+sudo apt-get update
 sudo apt install openjdk-8-jre
 sudo update-alternatives --config java
 wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
