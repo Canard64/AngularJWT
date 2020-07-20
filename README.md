@@ -19,7 +19,7 @@ wget -qO- https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt install -y nodejs
 
 npm i @angular/cli
-
+ok
 
 ## Development server
 
