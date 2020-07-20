@@ -1,23 +1,24 @@
 pipeline {
     agent any
+    tools {nodejs "node"}
 
     stages {
          stage('Clone') {
             steps {
                 echo 'Cloning..'
-                sh 'rm -rf *'
                 sh 'git clone https://github.com/Canard64/AngularJWT'
-                sh 'cd AngularJWT'
 
             }
         }
-          stage('Build') {
+          stage('Dependencies') {
             steps {
-                echo 'Building.'
                 sh 'npm install'
-                sh 'ng build'
-
-            }
+               }
+        }
+        stage('Test') {
+            steps {
+                sh 'npm test'
+               }
         }
 
     }
