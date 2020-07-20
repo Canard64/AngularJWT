@@ -12,6 +12,7 @@ pipeline {
         }
           stage('Dependencies') {
             steps {
+              sh "cd /var/lib/jenkins/workspace/UD_master/AngularJWT"
                 sh 'npm install'
 
                }
