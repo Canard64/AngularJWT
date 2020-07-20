@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
 
 #AWS Ubuntu Pipeline
-ET A
+CA MARCHE PAS
 Installation de Jenkins 
 sudo apt-get update
 sudo apt install openjdk-8-jre
