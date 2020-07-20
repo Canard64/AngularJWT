@@ -10,15 +10,17 @@ pipeline {
                 sh ' cd ./AngularJWT'
 
             }
-        }
+        },
           stage('Dependencies') {
             steps {
             dir('./AngularJWT'){
                  sh '$PWD'
-                 sh 'npm install'              }
+                 sh 'npm install'
+
+                   }
            }
 
-            }
+
         }
     }
 }
