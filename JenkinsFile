@@ -13,7 +13,9 @@ pipeline {
           stage('Dependencies') {
             steps {
               sh '$PWD'
-              dir('AngularJWT'){
+               sh 'npm install'
+                echo 'On change de dir.'
+              dir('./AngularJWT'){
                  sh '$PWD'
                  sh 'npm install'              }
            }
