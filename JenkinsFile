@@ -17,6 +17,7 @@ pipeline {
                    sh '$PWD'
                   sh 'npm install'
                   sh 'npm test'
+
               }
            }
         }
