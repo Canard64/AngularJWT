@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
 
+
+
 #AWS Ubuntu Pipeline
 CA MARCHE PAS
 Installation de Jenkins 
@@ -20,7 +22,17 @@ wget -qO- https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt install -y nodejs
 
 npm i @angular/cli
-od
+
+Ajout de SWAP dans l'instance EC2 
+sudo dd if=/dev/zero of=/mnt/swapfile bs=1M count=4096
+Make sure no other user can view the swap file
+
+sudo chown root:root /mnt/swapfile
+sudo chmod 600 /mnt/swapfile
+Make and Flag as swap
+
+sudo mkswap /mnt/swapfile
+sudo swapon /mnt/swapfile
 
 ## Development server
 
