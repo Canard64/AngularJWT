@@ -31,7 +31,7 @@ sudo apt install -y nodejs
 
 npm i @angular/cli
 
-Ajout de SWAP dans l'instance EC2 
+* Ajout de SWAP dans l'instance EC2 
 
 sudo dd if=/dev/zero of=/mnt/swapfile bs=1M count=4096
 
