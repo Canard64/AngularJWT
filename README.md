@@ -5,17 +5,25 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 
 #AWS Ubuntu Pipeline
-CA MARCHE PAS
-Installation de Jenkins 
+
+* Installation de Jenkins 
+
 sudo apt-get update
+
 sudo apt install openjdk-8-jre
+
 sudo update-alternatives --config java
+
 wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+
 sudo apt-add-repository "deb https://pkg.jenkins.io/debian-stable binary/"
+
 sudo apt install jenkins
+
 sudo systemctl start jenkins
 
-Installation de NPM/Node/AngularCLI
+*Installation de NPM/Node/AngularCLI
+
 sudo apt-get update
 sudo apt-get install npm
 wget -qO- https://deb.nodesource.com/setup_14.x | sudo -E bash -
